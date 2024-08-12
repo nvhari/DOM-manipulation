@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+
+<body>
+    <style>
+        #logo {
+            width: 100px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #logo:hover {
+            transform: scale(1.1);
+        }
+
+        .flex {
+            display: grid;
+            justify-items: center;
+
+            padding: 181px;
+        }
+    </style>
+
+
+    <div class="flex">
+        <h1>hover me</h1>
+        <img id="logo" src="img/sad.jpg" alt="profile" onmouseover="changelogo();" onmouseout="reset(); ">
+
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
